@@ -14,10 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const mail=document.getElementById('email').value.trim();
         const password=document.getElementById('password').value.trim();
 
-
         let isValid=true;
-
         let messages=[];
+
+        if(name.length<3){
+            isValid=false;
+        }
+
+        if(mail.includes('@')){
+           isValid=false;
+        }
+
+        if(password.length<8){
+            isValid=false
+        }
 
     });
 });
