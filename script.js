@@ -17,23 +17,19 @@ document.addEventListener('DOMContentLoaded', function() {
         let isValid=true;
         let messages=[];
 
-        if(name.length<3){
-            isValid=false;
-            messages.push("The length of the username should be 3 charectors at least.");
+        if (name.length < 3) {
+            isValid = false;
+            messages.push("The username should be at least 3 characters long.");
         }
-     
 
-        if(!mail.includes('@')||!mail.includes('.')){
-           isValid=false;
-           messages.push("The email should contain @ symbol.");
-        }
-        else{
-            
+        if (!mail.includes('@') || !mail.includes('.')) {
+            isValid = false;
+            messages.push("The email should contain both an @ and a dot.");
         }
 
         if (password.length < 8) {
             isValid = false;
-            messages.push("The password should at least be 8 characters long.");
+            messages.push("The password should be at least 8 characters long.");
         }
 
        
