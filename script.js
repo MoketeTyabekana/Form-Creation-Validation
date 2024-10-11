@@ -8,7 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     form.addEventListener('submit',function(event){
 
-        event.preventDefault()
+        event.preventDefault();
+
+        const name=document.getElementById('username').value.trim();
+        const mail=document.getElementById('email').value.trim();
+        const password=document.getElementById('password').value.trim();
 
     });
 });
