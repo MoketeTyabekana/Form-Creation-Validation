@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             messages.push("The username should be at least 3 characters long.");
         }
 
-        if (!email.includes('@') || !mail.includes('.')) {
+        if (!email.includes('@') || !email.includes('.')) {
             isValid = false;
             messages.push("The email should contain both an @ and a dot.");
         }
