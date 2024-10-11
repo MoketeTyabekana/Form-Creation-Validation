@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
 
         const username=document.getElementById('username').value.trim();
-        const mail=document.getElementById('email').value.trim();
+        const email=document.getElementById('email').value.trim();
         const password=document.getElementById('password').value.trim();
 
         let isValid=true;
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             messages.push("The username should be at least 3 characters long.");
         }
 
-        if (!mail.includes('@') || !mail.includes('.')) {
+        if (!email.includes('@') || !mail.includes('.')) {
             isValid = false;
             messages.push("The email should contain both an @ and a dot.");
         }
