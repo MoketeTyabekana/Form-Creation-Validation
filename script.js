@@ -29,5 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid=false
         }
 
+
+        feedbackDiv.style.display = "block";
+
     });
 });
