@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         event.preventDefault();
 
-        const name=document.getElementById('username').value.trim();
+        const username=document.getElementById('username').value.trim();
         const mail=document.getElementById('email').value.trim();
         const password=document.getElementById('password').value.trim();
 
         let isValid=true;
         let messages=[];
 
-        if (name.length < 3) {
+        if (username.length < 3) {
             isValid = false;
             messages.push("The username should be at least 3 characters long.");
         }
