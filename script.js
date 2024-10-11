@@ -14,5 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const mail=document.getElementById('email').value.trim();
         const password=document.getElementById('password').value.trim();
 
+
+        let isValid=true;
+
+        let messages=[];
+
     });
 });
