@@ -18,7 +18,10 @@ async function fetchUserData() {
         //In the try block, use the await keyword with the fetch function to asynchronously get data from apiUrl. Store the response in a constant named response.
 
         const response=await fetch(apiUrl);
-        
+
+        //convert the response to JSON using await response.json() and store this data in a constant named users.
+
+        const users=await response.json();
 
     }
     catch{
