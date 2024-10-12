@@ -33,9 +33,9 @@ async function fetchUserData() {
 
         //Loop through the users array with forEach, and for each user, do the following:
 
-        users.array.forEach(user => {
+        users.forEach(user => {
             
-            const listItem=document.createComment('li');
+            const listItem=document.createElement('li');
             listItem.textContent=user.name;
             
             userList.appendChild(listItem);
@@ -51,12 +51,13 @@ async function fetchUserData() {
         dataContainer.textContent='Failed to load user data.';
     }
     
-    // // Step 10: Add an event listener to fetch data after the DOM is fully loaded
-
-    document.addEventListener('DOMContentLoaded ',function(){
-
-        fetchUserData();
-
-    });
     
 }
+
+ // // Step 10: Add an event listener to fetch data after the DOM is fully loaded
+
+ document.addEventListener('DOMContentLoaded',function(){
+
+    fetchUserData();
+
+});
