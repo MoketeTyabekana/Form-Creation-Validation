@@ -31,6 +31,12 @@ async function fetchUserData() {
 
         const userList=document.createElement('ul');
 
+        //Loop through the users array with forEach, and for each user, do the following:
+
+        users.array.forEach(user => {
+            
+        });
+
     }
     catch{
 
