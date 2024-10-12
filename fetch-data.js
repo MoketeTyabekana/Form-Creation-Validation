@@ -44,10 +44,19 @@ async function fetchUserData() {
         dataContainer.appendChild(userList);
 
     }
-    catch{
+    //Error Handling
+    catch (error){
+        //clear the existing content of dataContainer
         dataContainer.innerHTML='';
-        
-
+        dataContainer.textContent='Failed to load user data.';
     }
+    
+    // // Step 10: Add an event listener to fetch data after the DOM is fully loaded
+
+    document.addEventListener('DOMContentLoaded ',function(){
+
+       
+
+    });
     
 }
