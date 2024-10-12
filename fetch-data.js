@@ -45,6 +45,8 @@ async function fetchUserData() {
 
     }
     catch{
+        dataContainer.innerHTML='';
+        
 
     }
     
