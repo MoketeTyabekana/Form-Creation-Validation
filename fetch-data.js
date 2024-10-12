@@ -27,6 +27,10 @@ async function fetchUserData() {
 
         dataContainer.innerHTML='';
 
+        //Create and Append User List
+
+        const userList=document.createElement('ul');
+
     }
     catch{
 
