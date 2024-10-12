@@ -55,7 +55,7 @@ async function fetchUserData() {
 
     document.addEventListener('DOMContentLoaded ',function(){
 
-       
+        fetchUserData();
 
     });
     
