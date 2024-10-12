@@ -38,6 +38,7 @@ async function fetchUserData() {
             const listItem=document.createComment('li');
             listItem.textContent=user.name;
             
+            userList.appendChild(listItem);
         });
 
     }
