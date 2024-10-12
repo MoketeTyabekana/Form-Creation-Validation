@@ -23,6 +23,10 @@ async function fetchUserData() {
 
         const users=await response.json();
 
+        //Clear the Loading Message
+
+        dataContainer.innerHTML='';
+
     }
     catch{
 
