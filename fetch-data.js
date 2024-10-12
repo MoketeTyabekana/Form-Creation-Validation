@@ -41,6 +41,8 @@ async function fetchUserData() {
             userList.appendChild(listItem);
         });
 
+        dataContainer.appendChild(userList);
+
     }
     catch{
 
