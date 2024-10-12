@@ -36,6 +36,7 @@ async function fetchUserData() {
         users.array.forEach(user => {
             
             const listItem=document.createComment('li');
+            listItem.textContent=user.name;
             
         });
 
